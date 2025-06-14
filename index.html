@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tushar Singh - ML Engineer & Researcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particle Canvas Background -->
+    <canvas id="particles-canvas"></canvas>
+    
+    <!-- Background Blur Overlay -->
+    <div id="blur-overlay" class="blur-overlay"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav__content">
+                <div class="nav__brand">Tushar Singh</div>
+                <div class="nav__links">
+                    <a href="#hero" class="nav__link">Home</a>
+                    <a href="#about" class="nav__link">About</a>
+                    <a href="#experience" class="nav__link">Experience</a>
+                    <a href="#projects" class="nav__link">Projects</a>
+                    <a href="#skills" class="nav__link">Skills</a>
+                    <a href="#contact" class="nav__link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    <span class="hero__name">Tushar Singh</span>
+                    <span class="hero__typed-text" id="typed-text"></span>
+                </h1>
+                <p class="hero__description">
+                    Masters in Machine Learning at University of Maryland College Park<br>
+                    Achieving 62x throughput improvements in AI systems | 4.0/4.0 GPA
+                </p>
+                <div class="hero__cta">
+                    <a href="#projects" class="btn btn--primary btn--lg">View My Work</a>
+                    <a href="https://github.com/tusu18" target="_blank" class="btn btn--outline btn--lg">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section__title">About Me</h2>
+            <div class="about__content">
+                <div class="about__text">
+                    <p>I'm a dedicated Machine Learning Engineer and Researcher with a passion for pushing the boundaries of AI technology. Currently pursuing my Masters at UMD with a perfect 4.0 GPA, I specialize in deep learning optimization, computer vision, and large-scale system architecture.</p>
+                    <p>My flagship project, HeRMES, achieved a revolutionary 62x throughput improvement in GPU scheduling systems, demonstrating my ability to solve complex computational challenges at scale.</p>
+                </div>
+                <div class="about__stats">
+                    <div class="stat">
+                        <div class="stat__number" data-target="62">0</div>
+                        <div class="stat__label">x Throughput Improvement</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__number" data-target="100">0</div>
+                        <div class="stat__label">K+ Transactions Processed</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__number" data-target="97">0</div>
+                        <div class="stat__label">% Model Precision</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__number" data-target="4">0</div>
+                        <div class="stat__label">.0 GPA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <h2 class="section__title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline__item">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <div class="timeline__header">
+                            <h3>Machine Learning Engineer/Researcher</h3>
+                            <span class="timeline__company">Tata Consultancy Services Ltd</span>
+                            <span class="timeline__duration">Jun 2021 - Aug 2024</span>
+                        </div>
+                        <ul class="timeline__achievements">
+                            <li>Enhanced TableNet 2.0 with adversarial robustness for bordered/borderless table detection in scanned documents (0.97 precision, 0.94 recall on Marmot)</li>
+                            <li>Deployed a signature verification system on AWS EC2/S3, processing 100K+ transactions with a 2.4% EER</li>
+                            <li>Automated floor-plan area detection and 3D visualization using Masked R-CNN, Vision Transformers, and Mesh generators, cutting delivery time 55%</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline__item">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <div class="timeline__header">
+                            <h3>AI Developer</h3>
+                            <span class="timeline__company">Tata Proengage</span>
+                            <span class="timeline__duration">2021-2024</span>
+                        </div>
+                        <p>Built an agentic LLM chatbot with LangChain, RAG, and fine-tuned LLaMA using LoRA over 200K+ policy docs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section__title">Featured Projects</h2>
+            <div class="projects__grid">
+                <!-- HeRMES Project -->
+                <div class="project-card" data-category="research">
+                    <div class="project-card__content">
+                        <div class="project-card__header">
+                            <h3 class="project-card__title">HeRMES: GPU Scheduling System</h3>
+                            <span class="project-card__subtitle">Heterogeneity Aware Resource Mapping for Efficient Scheduling</span>
+                            <span class="project-card__duration">2024-2025</span>
+                        </div>
+                        <p class="project-card__description">Revolutionary deep learning workload optimization system achieving 62x throughput increase over naive FSDP implementations</p>
+                        <div class="project-card__tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Mixed-Integer Programming</span>
+                            <span class="tech-tag">Gurobi</span>
+                            <span class="tech-tag">PyTorch</span>
+                        </div>
+                    </div>
+                    <div class="project-card__overlay">
+                        <div class="overlay__content">
+                            <h4>Technical Details</h4>
+                            <p>HeRMES addresses critical challenges in heterogeneous GPU clusters by implementing thermal awareness and bandwidth-conscious scheduling algorithms. The system leverages Mixed-Integer Programming formulations with support for multiple solver backends including Gurobi, CVXPY, and ECOS.</p>
+                            <ul class="overlay__achievements">
+                                <li>62x throughput improvement over naive FSDP implementations</li>
+                                <li>30-80% efficiency gains over manually tuned baselines</li>
+                                <li>Thermal-aware scheduling with bandwidth optimization</li>
+                                <li>Support for heterogeneous GPU configurations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TableNet 2.0 Project -->
+                <div class="project-card" data-category="industrial">
+                    <div class="project-card__content">
+                        <div class="project-card__header">
+                            <h3 class="project-card__title">TableNet 2.0 Enhancement</h3>
+                            <span class="project-card__subtitle">Adversarial Robustness for Document Table Detection</span>
+                            <span class="project-card__duration">2023-2024</span>
+                        </div>
+                        <p class="project-card__description">Enhanced table detection system with adversarial robustness achieving state-of-the-art performance on Marmot dataset</p>
+                        <div class="project-card__tech">
+                            <span class="tech-tag">TableNet</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Amazon Bedrock</span>
+                            <span class="tech-tag">FAISS</span>
+                        </div>
+                    </div>
+                    <div class="project-card__overlay">
+                        <div class="overlay__content">
+                            <h4>Technical Implementation</h4>
+                            <p>Developed advanced adversarial robustness techniques for table detection in scanned documents, surpassing existing state-of-the-art models. The system integrates seamlessly with EDA pipelines and features a RAG LLM copilot.</p>
+                            <ul class="overlay__achievements">
+                                <li>0.97 precision, 0.94 recall on Marmot dataset</li>
+                                <li>Integration with RAG LLM copilot for automated FSDs</li>
+                                <li>40% reduction in manual intervention</li>
+                                <li>State-of-the-art adversarial robustness</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CalVision Project -->
+                <div class="project-card" data-category="computer-vision">
+                    <div class="project-card__content">
+                        <div class="project-card__header">
+                            <h3 class="project-card__title">CalVision: AI Calorie Prediction</h3>
+                            <span class="project-card__subtitle">3D Food Volume Estimation System</span>
+                            <span class="project-card__duration">2022-2023</span>
+                        </div>
+                        <p class="project-card__description">Instant calorie prediction system integrating DepthNet and YOLOv4 for accurate volume estimation</p>
+                        <div class="project-card__tech">
+                            <span class="tech-tag">YOLOv4</span>
+                            <span class="tech-tag">DepthNet</span>
+                            <span class="tech-tag">NeRF</span>
+                            <span class="tech-tag">OpenCV</span>
+                        </div>
+                    </div>
+                    <div class="project-card__overlay">
+                        <div class="overlay__content">
+                            <h4>Computer Vision Innovation</h4>
+                            <p>Comprehensive computer vision system for instant calorie prediction by integrating advanced depth estimation and object detection technologies. Features Neural Radiance Fields for 3D reconstruction.</p>
+                            <ul class="overlay__achievements">
+                                <li>95% mAP@50 with 40% faster inference</li>
+                                <li>5% error in volume estimation accuracy</li>
+                                <li>Neural Radiance Fields for 3D reconstruction</li>
+                                <li>Real-time on-device inference with Edge GPU support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DC Generator Project -->
+                <div class="project-card" data-category="generative-ai">
+                    <div class="project-card__content">
+                        <div class="project-card__header">
+                            <h3 class="project-card__title">DC Generator: UI to Code</h3>
+                            <span class="project-card__subtitle">Wireframe to HTML/CSS/JS Conversion</span>
+                            <span class="project-card__duration">2023-2024</span>
+                        </div>
+                        <p class="project-card__description">Deep learning pipeline converting hand-drawn UI wireframes into executable code with 22% improvement over baselines</p>
+                        <div class="project-card__tech">
+                            <span class="tech-tag">YOLOv7</span>
+                            <span class="tech-tag">GAN</span>
+                            <span class="tech-tag">HTML/CSS/JS</span>
+                            <span class="tech-tag">Computer Vision</span>
+                        </div>
+                    </div>
+                    <div class="project-card__overlay">
+                        <div class="overlay__content">
+                            <h4>Generative AI Pipeline</h4>
+                            <p>Pioneered an innovative deep learning pipeline that transforms hand-drawn UI wireframes into fully executable HTML/CSS/JS code. Features a sophisticated GAN-based refinement module.</p>
+                            <ul class="overlay__achievements">
+                                <li>22% improvement over UI2Code baselines</li>
+                                <li>40% reduction in functional specification effort</li>
+                                <li>GAN-based layout refinement module</li>
+                                <li>Production deployment for TCS Bancs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Signature Verification Project -->
+                <div class="project-card" data-category="computer-vision">
+                    <div class="project-card__content">
+                        <div class="project-card__header">
+                            <h3 class="project-card__title">Signature Verification System</h3>
+                            <span class="project-card__subtitle">CNN-based Authentication with 2.4% EER</span>
+                            <span class="project-card__duration">2022-2023</span>
+                        </div>
+                        <p class="project-card__description">Advanced signature verification system processing 100K+ transactions with industry-leading accuracy</p>
+                        <div class="project-card__tech">
+                            <span class="tech-tag">CNN</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">AWS EC2</span>
+                            <span class="tech-tag">MLOps</span>
+                        </div>
+                    </div>
+                    <div class="project-card__overlay">
+                        <div class="overlay__content">
+                            <h4>Production AI System</h4>
+                            <p>Designed and deployed a sophisticated signature verification system using state-of-the-art Convolutional Neural Networks for financial authentication with robust security standards.</p>
+                            <ul class="overlay__achievements">
+                                <li>2.4% Equal Error Rate on 100K+ transactions</li>
+                                <li>40% reduction in manual intervention</li>
+                                <li>AWS cloud deployment with scalability</li>
+                                <li>Industry-leading authentication accuracy</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floor Plan Project -->
+                <div class="project-card" data-category="computer-vision">
+                    <div class="project-card__content">
+                        <div class="project-card__header">
+                            <h3 class="project-card__title">Floor Plan 3D Visualization</h3>
+                            <span class="project-card__subtitle">Automated Area Detection and Mesh Generation</span>
+                            <span class="project-card__duration">2023</span>
+                        </div>
+                        <p class="project-card__description">Automated floor-plan analysis system cutting delivery time by 55% through AI-powered 3D visualization</p>
+                        <div class="project-card__tech">
+                            <span class="tech-tag">Masked R-CNN</span>
+                            <span class="tech-tag">Vision Transformers</span>
+                            <span class="tech-tag">3D Mesh Generation</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                    </div>
+                    <div class="project-card__overlay">
+                        <div class="overlay__content">
+                            <h4>3D Vision Pipeline</h4>
+                            <p>Revolutionized architectural analysis through automated floor-plan area detection and sophisticated 3D visualization capabilities. The system fuses cutting-edge Masked R-CNN technology with Vision Transformers.</p>
+                            <ul class="overlay__achievements">
+                                <li>55% reduction in delivery time</li>
+                                <li>Advanced 3D mesh generation integration</li>
+                                <li>Containerized pipeline with Docker Compose</li>
+                                <li>Comprehensive technical documentation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section__title">Technical Skills</h2>
+            <div class="skills__grid">
+                <div class="skill-category">
+                    <h3 class="skill-category__title">Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Scala</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">Bash</span>
+                        <span class="skill-tag">Verilog</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category__title">Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Hugging Face</span>
+                        <span class="skill-tag">Edge AI</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Ollama</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">GraphQL</span>
+                        <span class="skill-tag">PySpark</span>
+                        <span class="skill-tag">ONNX</span>
+                        <span class="skill-tag">Hadoop</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category__title">ML/AI Libraries</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Keras</span>
+                        <span class="skill-tag">scikit-learn</span>
+                        <span class="skill-tag">JAX</span>
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">OpenAI</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">DeepSpeed</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category__title">Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">MLflow</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">Databricks</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">Pinecone</span>
+                        <span class="skill-tag">vLLM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section__title">Get In Touch</h2>
+            <div class="contact__content">
+                <div class="contact__info">
+                    <h3>Let's Collaborate</h3>
+                    <p>I'm always interested in discussing innovative AI projects, research opportunities, and potential collaborations. Feel free to reach out!</p>
+                    <div class="contact__links">
+                        <a href="mailto:tusu18@umd.edu" class="contact__link">
+                            <span>Email</span>
+                            <span>tusu18@umd.edu</span>
+                        </a>
+                        <a href="https://github.com/tusu18" target="_blank" class="contact__link">
+                            <span>GitHub</span>
+                            <span>github.com/tusu18</span>
+                        </a>
+                        <a href="https://linkedin.com/in/tushar-singh-4326b7188" target="_blank" class="contact__link">
+                            <span>LinkedIn</span>
+                            <span>Tushar Singh</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact__form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" class="form-control" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
